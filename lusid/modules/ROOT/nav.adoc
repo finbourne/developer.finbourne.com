@@ -1,0 +1,9 @@
+* xref:get-started/index.adoc[Getting Started]
+    ** xref:get-started/configure-secrets.adoc[Configure Secrets]
+    ** xref:get-started/create-application.adoc[Create Application]
+
+* xref:languages/index.adoc[Language SDKs]
+    ** xref:languages/python.adoc[Python]
+    ** xref:languages/csharp.adoc[C#]
+    ** xref:languages/java.adoc[Java]
+    ** xref:languages/javascript.adoc[JavaScript]

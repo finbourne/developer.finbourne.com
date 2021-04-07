@@ -1,0 +1,8 @@
+name: lusid
+title: LUSID
+version: master
+nav:
+- modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    page-toclevels: 2@

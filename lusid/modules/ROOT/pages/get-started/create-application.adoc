@@ -1,0 +1,5 @@
+= Create application
+
+Create an application by doing these steps...
+
+https://www.lusid.com/app/resources/tutorials/getting-started/onboarding/manage-applications

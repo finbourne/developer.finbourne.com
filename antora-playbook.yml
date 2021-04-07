@@ -1,12 +1,21 @@
 site:
-  title: Finbourne Developer Hub
+  title: FINBOURNE Developer Hub
   start_page: developer::index.adoc 
 content:
   sources: 
     - url: .
       branches: HEAD
-      start_path: home
+      start_path: home     
+    - url: .
+      branches: HEAD
+      start_path: lusid         
 ui: 
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: antora-ui-bundle.zip
     snapshot: true
+urls:
+  html_extension_style: indexify    
+asciidoc:
+  extensions:
+  - ./extensions/remote-include/remote-include-processor  

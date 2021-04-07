@@ -1,0 +1,10 @@
+= C#
+
+We publish two versions of the LUSID® C# SDK:
+
+https://github.com/finbourne/lusid-sdk-csharp[lusid-sdk-csharp^] ::
+supports `Production` and `Early Access` API endpoints
+https://github.com/finbourne/lusid-sdk-csharp-preview[lusid-sdk-csharp-preview^] ::
+supports `Production`, `Early Access`, `Beta` and `Experimental` API endpoints.
+
+include::partial$api-endpoints.adoc[]

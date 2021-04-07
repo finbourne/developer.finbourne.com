@@ -1,0 +1,206 @@
+= FINBOURNE Developer Hub
+:page-layout: landing-page
+
+[sub="attrs"]
+++++
+<style>
+.tiles > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.tiles.sdks > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  list-style-type: none;  
+}
+
+.tiles > ul > li {
+  border: 1px solid rgb(226,230,231);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.tiles > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+  margin: 0;
+}
+
+.tiles > ul > li > figure > img, .tiles > ul > li > figure > a > img {
+  width: 100%;
+}
+
+.tiles > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(50,65,80,0.9);
+  width: 100%;
+}
+
+.tiles > ul > li > figure > figcaption > h3 {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.tiles > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.tiles > ul > li > a.button, .tiles a.button {
+  padding: .5rem 1rem;
+  margin: .5rem;
+  background-color: rgba(144,62,172, 0.75);
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+.tiles a.button { 
+  background-color: rgb(144,62,172);
+}
+
+.tiles a.button.main-c2a {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.tiles > ul > li > a:hover, .tiles a.button:hover {
+  opacity: .6;
+}
+
+section#language-sdks img:hover {
+   opacity: .5;
+}
+ 
+ h1,h2,h3,h4,h5,h6 .landing-page-section {
+    color: #415464;
+    text-align: center;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+section#get-started {
+  text-align: center;
+}
+
+.tiles p {
+  line-height: 1.5rem;
+}
+
+section.tiles {
+  padding: 0 0 30px 0;
+}
+
+section.tiles:last-of-type {
+  padding: 0;
+}
+</style>
+
+<div class="container">    
+    <section id="get-started" class="tiles">
+      <h2 class="landing-page-secton">Getting Started</h2>
+      <p>
+      LUSID by FINBOURNE is a bi-temporal investment management data platform with portfolio accounting capabilities. On the FINBOURNE Developer Hub you'll find guides, tutorials, and code samples to help you build next-generation finance apps.
+      </p>
+      <a class="button main-c2a" href="/lusid/get-started">Get Started</a>
+    </section>
+
+    <section class="tiles sdks" id="language-sdks">
+        <h2 class="landing-page-secton">Language SDKs</h2>
+        <ul>
+            <li>
+                <figure>   
+                  <a href="/lusid/languages/python"><img src="/static/assets/img/thumbnail_python-logo.png" alt="Python Logo"></a>
+                </figure>
+
+            
+            </li>
+            <li>
+                <figure>
+                    <a href="/lusid/languages/csharp"><img src="/static/assets/img/csharp-logo.png" alt="C# Logo"></a>
+                </figure>
+                
+            
+            </li>
+            <li>
+                <figure>
+                    <a href="/lusid/languages/java"><img src="/static/assets/img/java-logo.png" alt="Java Logo"></a>
+                </figure>
+                
+            
+            </li>
+            <li>
+                <figure>
+                    <a href="/lusid/languages/javascript"><img src="/static/assets/img/javascript-logo.png" alt="JavaScript Logo"></a>
+                </figure>  
+            </li>            
+        </ul>
+    </section>
+
+    <section class="tiles" id="notebooks">
+        <h2 class="landing-page-section">Sample Notebooks</h2>
+        <ul>
+            <li>
+                <figure>          
+                    <img src="/static/assets/img/noun_portfolio_2484233.png" alt="A portfolio">
+                    <figcaption><h3>Valuing a portfolio</h3></figcaption>
+                </figure>
+                <p>Value a portfolio for an out of the box look at positions and valuations.</p>
+                <a class="button" href="https://github.com/finbourne/sample-notebooks/blob/master/examples/use-cases/valuation/Simple%20Valuation.ipynb">View Notebook</a>
+            </li>
+            <li>
+                <figure>
+                    <img src="/static/assets/img/noun_balance_142702.png" alt="Reconciliation">
+                    <figcaption><h3>Perform a reconciliation</h3></figcaption>
+                </figure>
+                <p>Find discrepancies between versions of a portfolio.</p>
+                <a class="button" href="https://github.com/finbourne/sample-notebooks/blob/master/examples/use-cases/ibor/Perform%20a%20reconciliation.ipynb">View Notebook</a>
+            </li>
+            <li>
+                <figure>
+                    <img src="/static/assets/img/noun_transactions_2337768.png" alt="Investment Book of Record">
+                    <figcaption><h3>A day in the life of an IBOR</h3></figcaption>
+                </figure>
+                <p>Build out an Investment Book of Record from an Accounting Book of Record.</p>
+                <a class="button" href="https://github.com/finbourne/sample-notebooks/blob/master/examples/use-cases/ibor/IBOR%20User%20Journey.ipynb">View Notebook</a>
+            </li>
+        </ul>
+    </section>
+</div>
+++++
+
+// FINBOURNE build tools that make it easier to manage investment data.
+
+// * https://www.lusid.com/app/signup[Sign up for 30-day free trial^]
+
+// == Language SDKS
+
+//     * https://github.com/finbourne/lusid-sdk-python
+//     * https://github.com/finbourne/lusid-sdk-csharp
+//     * https://github.com/finbourne/lusid-sdk-java
+//     * https://github.com/finbourne/lusid-sdk-js
+
+// == Featured sample notebooks
+    
+//     * Valuing a portfolio - https://github.com/finbourne/sample-notebooks/blob/master/examples/use-cases/valuation/Simple%20Valuation.ipynb
+//     * Perform a reconciliation - https://github.com/finbourne/sample-notebooks/blob/master/examples/use-cases/ibor/Perform%20a%20reconciliation.ipynb
+//     * A day in the life of an IBOR - https://github.com/finbourne/sample-notebooks/blob/master/examples/use-cases/ibor/IBOR%20User%20Journey.ipynb
+
+
