@@ -1,4 +1,5 @@
 = Python
+:description: This guide covers the Python SDK for LUSID by FINBOURNE and other Python tools.
 
 We publish two versions of the LUSID® Python SDK:
 

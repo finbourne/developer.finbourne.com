@@ -1,3 +1,4 @@
 = Java
+:description: This guide covers the Java SDK for LUSID by FINBOURNE.
 
 Using LUSID with Java...

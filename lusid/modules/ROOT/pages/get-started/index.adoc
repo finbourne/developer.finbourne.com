@@ -1,5 +1,7 @@
 = Getting Started with LUSID
 
+// {docdatetime}
+
 In this guide you will go through the steps to get you up and running with LUSID by FINBOURNE, a bi-temporal investment management data platform with portfolio accounting capabilities.
 
 * Sign up for account - fill in the form, confirmation email, login again

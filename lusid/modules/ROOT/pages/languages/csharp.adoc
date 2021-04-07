@@ -1,4 +1,5 @@
 = C#
+:description: This guide covers the C# SDK for LUSID by FINBOURNE.
 
 We publish two versions of the LUSID® C# SDK:
 
