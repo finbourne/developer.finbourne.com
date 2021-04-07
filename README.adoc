@@ -1,1 +1,16 @@
 = Source for (the future) developer.finbourne.com 
+
+
+== Re-build everything
+
+[source, bash]
+----
+rm -rf build && cd antora-ui-bundle && zip -r ../antora-ui-bundle.zip * && cd .. && npm run build && npm run start
+----
+
+== Re-build content
+
+[source,bash]
+----
+npm run build && npm run start
+----
