@@ -15,6 +15,11 @@ https://support.lusid.com/knowledgebase/article/KA-01828/
 Examples of tutorials:
 https://www.lusid.com/app/resources/tutorials/getting-started/ibor/upload-transactions#api
 
+Derived Portfolios
+https://github.com/finbourne/sample-notebooks/blob/master/examples/use-cases/risk-and-performance/Backtesting%20with%20LUSID%20derived%20portfolios.ipynb
+https://support.lusid.com/knowledgebase/article/KA-01853
+https://github.com/finbourne/sample-notebooks/blob/develop/examples/features/core-lusid/Derived%20portfolios.ipynb
+
 == LUSID Architecture
 
 == Glossary / Terminology

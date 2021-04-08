@@ -1,7 +1,7 @@
 = C#
 :description: This guide covers the C# SDK for LUSID by FINBOURNE.
 
-We publish two versions of the LUSID® C# SDK:
+FINBOURNE publishes two versions of the LUSID® C# SDK:
 
 https://github.com/finbourne/lusid-sdk-csharp[lusid-sdk-csharp^] ::
 supports `Production` and `Early Access` API endpoints

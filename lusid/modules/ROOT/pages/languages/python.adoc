@@ -1,7 +1,7 @@
 = Python
 :description: This guide covers the Python SDK for LUSID by FINBOURNE and other Python tools.
 
-We publish two versions of the LUSID® Python SDK:
+FINBOURNE develops and maintains two versions of the LUSID® Python SDK:
 
 https://github.com/finbourne/lusid-sdk-python[lusid-sdk-python^] ::
 supports `Production` and `Early Access` API endpoints
@@ -10,11 +10,14 @@ supports `Production`, `Early Access`, `Beta` and `Experimental` API endpoints.
 
 include::partial$api-endpoints.adoc[]
 
-> If you install both `lusid-sdk-python` and `lusid-sdk-python-preview`, `import lusid` will refer to `lusid-sdk-python`. 
+[NOTE]
+====
+You should only use `lusid-sdk-python-prevew` if you want to use the `Beta` or `Experimental` API endpoints.
+====
 
 == Installation
 
-The PyPi package for the LUSID SDK can be installed by running the following:
+The SDK is available on PyPi and can be installed by running the following:
 
 [source, bash]
 ----
@@ -28,6 +31,11 @@ The preview version of the SDK can be installed by running the following:
 pip install lusid-sdk-preview
 ----
 
+[WARNING]
+====
+If you install both `lusid-sdk-python` and `lusid-sdk-python-preview`, `import lusid` will refer to `lusid-sdk-python`. 
+====
+
 == Configuring API Client
 
 Now that you've installed the SDK, it's time to use it. 
@@ -38,7 +46,7 @@ First, import the following modules:
 include::https://github.com/mneedham/lusid-sdk-python/raw/readme-refactoring/sdk/examples/hello_world.py[tag="lusid-imports"]
 ----
 
-You can create an API factory by running the following code:
+You can create the API factory by running the following code:
 
 [source, python]
 ----
@@ -59,7 +67,7 @@ You can list all the API endpoints by running the following:
 [api for api in dir(lusid.api) if "API" in api]
 ----
 
-An API endpoint can be constructed by calling api_factory.build(lusid.api.<className>) for any of the returned classes.
+An API endpoint can be constructed by calling `api_factory.build(lusid.api.<className>)` for any of the returned classes.
 For example, to construct the Transactions Portfolio API, run the following:
 
 [source, python]

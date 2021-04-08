@@ -155,7 +155,7 @@ section.tiles:last-of-type {
     </section>
 
     <section class="tiles" id="notebooks">
-        <h2 class="landing-page-section">Sample Notebooks</h2>
+        <h2 class="landing-page-section">Jupyter Notebooks</h2>
         <ul>
             <li>
                 <figure>          
