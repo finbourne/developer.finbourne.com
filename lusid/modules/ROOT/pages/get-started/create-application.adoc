@@ -1,5 +1,45 @@
 = Create application
+:description: This guide walks through how to create a LUSID application.
+:page-pagination: true
 
-Create an application by doing these steps...
+In this guide you'll learn how to create an application to use with the LUSID API and LUSID SDKs.
 
-https://www.lusid.com/app/resources/tutorials/getting-started/onboarding/manage-applications
+First, you'll need to navigate to your LUSID domain e.g. `yourname.lusid.com`.
+You'll see the screen below:
+
+.Click on the `Open LUSID` button
+image::application-part-0.png[]
+
+Click on `Open LUSID` under the `APPLICATION` section.
+If you aren't logged in you'll see the following screen, which has two `Sign-in` buttons:
+
+.Click on the `Sign-in` button
+image::application-part-1.png[]
+
+Clicking on one of them will take you to the following screen, where you should enter the credentials that you created in xref:get-started/create-account.adoc[].
+
+.Populate your credentials
+image::application-part-2.png[width=400]
+
+Once you've logged in, you'll see the LUSID home page. 
+
+.Select the person icon followed by `Applications`
+image::application-part-3.png[]
+
+Click on the person icon on the left hand menu and then click on the `Applications` link.
+You'll see the following screen:
+
+.Create a new application
+image::application-part-4.png[]
+
+Create a new application by clicking on the `Create application` link, choose a `Client Id` and `Display Name`, and then click on the `SAVE` button.
+
+[NOTE]
+====
+The `Client Id` must be a string with no spaces.
+====
+
+You'll then see the following screen if the application has been created:
+
+.Application created
+image::application-part-5.png[]

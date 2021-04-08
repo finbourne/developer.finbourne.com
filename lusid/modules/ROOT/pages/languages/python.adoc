@@ -1,6 +1,8 @@
 = Python
 :description: This guide covers the Python SDK for LUSID by FINBOURNE and other Python tools.
 
+This guide will help you get started with building applications with LUSID by FINBOURNE and the Python programming language.
+
 FINBOURNE develops and maintains two versions of the LUSID® Python SDK:
 
 https://github.com/finbourne/lusid-sdk-python[lusid-sdk-python^] ::
@@ -77,7 +79,7 @@ include::https://github.com/mneedham/lusid-sdk-python/raw/readme-refactoring/sdk
 
 == API Documentation
 
-For reference documentation on each of the APIs, see https://lusid-sdk-python.readthedocs.io/en/latest/_autosummary/sdk.lusid.api.html#module-sdk.lusid.api[Python SDK Reference Documentation^].
+For reference documentation on each of the API endpoints, see https://lusid-sdk-python.readthedocs.io/en/latest/_autosummary/sdk.lusid.api.html#module-sdk.lusid.api[Python SDK Reference Documentation^].
 
 == Other Tools
 
