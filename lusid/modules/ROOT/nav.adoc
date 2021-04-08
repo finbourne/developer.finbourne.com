@@ -1,7 +1,7 @@
 * xref:get-started/index.adoc[Getting Started]
     ** xref:get-started/create-account.adoc[]
     ** xref:get-started/create-application.adoc[]
-    ** xref:get-started/configure-secrets.adoc[]
+    ** xref:get-started/configure-secrets-file.adoc[]
 
 * xref:languages/index.adoc[Language SDKs]
     ** xref:languages/python.adoc[Python]

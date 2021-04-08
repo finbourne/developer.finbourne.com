@@ -3,7 +3,7 @@
 
 This guide will help you get started with building applications with LUSID by FINBOURNE and the C# programming language.
 
-FINBOURNE develops and maintains two versions of the LUSID® LUSID® C# SDK:
+FINBOURNE develops and maintains two versions of the LUSID® C# SDK:
 
 https://github.com/finbourne/lusid-sdk-csharp[lusid-sdk-csharp^] ::
 supports `Production` and `Early Access` API endpoints
@@ -60,11 +60,7 @@ var secretsFile = "/path/to/secrets.json";
 var apiFactory = LusidApiFactoryBuilder.Build(secretsFile);
 ----
 
-[NOTE]
-====
-You will need to create a secrets file containing your LUSID credentials. 
-For instructions on how to construct this file, see xref:get-started/configure-secrets.adoc[].
-====
+include::partial$credentials.adoc[]
 
 Now that the API client is ready, you are ready to use the various API endpoints. 
 An API endpoint can be constructed by calling `apiFactory.Api(Lusid.Sdk.Api.<className>)` for any of the returned classes.

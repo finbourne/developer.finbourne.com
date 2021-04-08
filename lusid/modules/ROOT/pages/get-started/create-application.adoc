@@ -2,7 +2,7 @@
 :description: This guide walks through how to create a LUSID application.
 :page-pagination: true
 
-In this guide you'll learn how to create an application to use with the LUSID API and LUSID SDKs.
+In this guide you'll learn how to create a LUSID application to use with the LUSID API and xref:languages/index.adoc[LUSID SDKs].
 
 First, you'll need to navigate to your LUSID domain e.g. `yourname.lusid.com`.
 You'll see the screen below:
@@ -21,7 +21,8 @@ Clicking on one of them will take you to the following screen, where you should 
 .Populate your credentials
 image::application-part-2.png[width=400]
 
-Once you've logged in, you'll see the LUSID home page. 
+Once you've filled in your credentials, click on the `Sign In` button.
+You'll then be redirected to the LUSID home page. 
 
 .Select the person icon followed by `Applications`
 image::application-part-3.png[]
