@@ -22,5 +22,7 @@ ui:
 urls:
   html_extension_style: indexify    
 asciidoc:
+  attributes:
+    images_base_uri: https://angry-dijkstra-6394a6.netlify.app/developer/_images
   extensions:
   - ./extensions/remote-include/remote-include-processor  

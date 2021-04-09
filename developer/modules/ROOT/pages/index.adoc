@@ -128,28 +128,28 @@ section.tiles:last-of-type {
         <ul>
             <li>
                 <figure>   
-                  <a href="/lusid/languages/python"><img src="{site.url}/developer/_images/thumbnail_python-logo.png" alt="Python Logo"></a>
+                  <a href="/lusid/languages/python"><img src="{images_base_uri}/thumbnail_python-logo.png" alt="Python Logo"></a>
                 </figure>
 
             
             </li>
             <li>
                 <figure>
-                    <a href="/lusid/languages/csharp"><img src="/static/assets/img/csharp-logo.png" alt="C# Logo"></a>
+                    <a href="/lusid/languages/csharp"><img src="{images_base_uri}/csharp-logo.png" alt="C# Logo"></a>
                 </figure>
                 
             
             </li>
             <li>
                 <figure>
-                    <a href="/lusid/languages/java"><img src="/static/assets/img/java-logo.png" alt="Java Logo"></a>
+                    <a href="/lusid/languages/java"><img src="{images_base_uri}/java-logo.png" alt="Java Logo"></a>
                 </figure>
                 
             
             </li>
             <li>
                 <figure>
-                    <a href="/lusid/languages/javascript"><img src="/static/assets/img/javascript-logo.png" alt="JavaScript Logo"></a>
+                    <a href="/lusid/languages/javascript"><img src="{images_base_uri}/javascript-logo.png" alt="JavaScript Logo"></a>
                 </figure>  
             </li>            
         </ul>
@@ -160,7 +160,7 @@ section.tiles:last-of-type {
         <ul>
             <li>
                 <figure>          
-                    <img src="/static/assets/img/noun_portfolio_2484233.png" alt="A portfolio">
+                    <img src="{images_base_uri}/noun_portfolio_2484233.png" alt="A portfolio">
                     <figcaption><h3>Valuing a portfolio</h3></figcaption>
                 </figure>
                 <p>Value a portfolio for an out of the box look at positions and valuations.</p>
@@ -168,7 +168,7 @@ section.tiles:last-of-type {
             </li>
             <li>
                 <figure>
-                    <img src="/static/assets/img/noun_balance_142702.png" alt="Reconciliation">
+                    <img src="{images_base_uri}/noun_balance_142702.png" alt="Reconciliation">
                     <figcaption><h3>Perform a reconciliation</h3></figcaption>
                 </figure>
                 <p>Find discrepancies between versions of a portfolio.</p>
@@ -176,7 +176,7 @@ section.tiles:last-of-type {
             </li>
             <li>
                 <figure>
-                    <img src="/static/assets/img/noun_transactions_2337768.png" alt="Investment Book of Record">
+                    <img src="{images_base_uri}/img/noun_transactions_2337768.png" alt="Investment Book of Record">
                     <figcaption><h3>A day in the life of an IBOR</h3></figcaption>
                 </figure>
                 <p>Build out an Investment Book of Record from an Accounting Book of Record.</p>
