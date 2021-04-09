@@ -1,5 +1,6 @@
 site:
   title: FINBOURNE Developer Hub
+  url: https://finbourne.github.io/developer.finbourne.com/build/site
   start_page: developer::index.adoc 
 content:
   sources: 
