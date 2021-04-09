@@ -176,7 +176,7 @@ section.tiles:last-of-type {
             </li>
             <li>
                 <figure>
-                    <img src="{images_base_uri}/img/noun_transactions_2337768.png" alt="Investment Book of Record">
+                    <img src="{images_base_uri}/noun_transactions_2337768.png" alt="Investment Book of Record">
                     <figcaption><h3>A day in the life of an IBOR</h3></figcaption>
                 </figure>
                 <p>Build out an Investment Book of Record from an Accounting Book of Record.</p>
