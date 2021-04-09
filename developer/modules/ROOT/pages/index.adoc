@@ -120,7 +120,7 @@ section.tiles:last-of-type {
       <p>
       LUSID by FINBOURNE is a bi-temporal investment management data platform with portfolio accounting capabilities. On the FINBOURNE Developer Hub you'll find guides, tutorials, and code samples to help you build next-generation finance apps.
       </p>
-      <a class="button main-c2a" href="/developer/lusid/get-started">Get Started</a>
+      <a class="button main-c2a" href="/lusid/get-started">Get Started</a>
     </section>
 
     <section class="tiles sdks" id="language-sdks">
@@ -128,28 +128,28 @@ section.tiles:last-of-type {
         <ul>
             <li>
                 <figure>   
-                  <a href="/developer/lusid/languages/python"><img src="{images_base_uri}/thumbnail_python-logo.png" alt="Python Logo"></a>
+                  <a href="/lusid/languages/python"><img src="{images_base_uri}/thumbnail_python-logo.png" alt="Python Logo"></a>
                 </figure>
 
             
             </li>
             <li>
                 <figure>
-                    <a href="/developer/lusid/languages/csharp"><img src="{images_base_uri}/csharp-logo.png" alt="C# Logo"></a>
+                    <a href="/lusid/languages/csharp"><img src="{images_base_uri}/csharp-logo.png" alt="C# Logo"></a>
                 </figure>
                 
             
             </li>
             <li>
                 <figure>
-                    <a href="/developer/lusid/languages/java"><img src="{images_base_uri}/java-logo.png" alt="Java Logo"></a>
+                    <a href="/lusid/languages/java"><img src="{images_base_uri}/java-logo.png" alt="Java Logo"></a>
                 </figure>
                 
             
             </li>
             <li>
                 <figure>
-                    <a href="/developer/lusid/languages/javascript"><img src="{images_base_uri}/javascript-logo.png" alt="JavaScript Logo"></a>
+                    <a href="/lusid/languages/javascript"><img src="{images_base_uri}/javascript-logo.png" alt="JavaScript Logo"></a>
                 </figure>  
             </li>            
         </ul>
