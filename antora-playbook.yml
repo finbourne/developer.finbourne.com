@@ -1,21 +1,18 @@
 site:
   title: FINBOURNE Developer Hub
-  url: https://finbourne.github.io/developer.finbourne.com/build/site
+  url: https://finbourne.github.io/developer.finbourne.com
   start_page: developer::index.adoc 
 content:
   sources: 
     - url: .
       branches: HEAD
-      start_path: home     
-    - url: .
-      branches: HEAD
-      start_path: lusid         
+      start_path: developer     
 ui: 
   bundle:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
     # url: antora-ui-bundle.zip
-    # url: /Users/markneedham/projects/docs-ui/build/ui-bundle.zip
-    url: ui-bundle.zip
+    url: /Users/markneedham/projects/docs-ui/build/ui-bundle.zip
+    # url: ui-bundle.zip
     snapshot: true
   output_dir: ui    
 urls:

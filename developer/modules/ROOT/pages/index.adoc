@@ -1,7 +1,8 @@
 = FINBOURNE Developer Hub
 :page-layout: landing-page
 
-[sub="attrs"]
+
+[subs="attributes"]
 ++++
 <style>
 .tiles > ul {
@@ -127,7 +128,7 @@ section.tiles:last-of-type {
         <ul>
             <li>
                 <figure>   
-                  <a href="/lusid/languages/python"><img src="/static/assets/img/thumbnail_python-logo.png" alt="Python Logo"></a>
+                  <a href="/lusid/languages/python"><img src="{site.url}/developer/_images/thumbnail_python-logo.png" alt="Python Logo"></a>
                 </figure>
 
             

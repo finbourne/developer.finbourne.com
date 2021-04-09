@@ -1,0 +1,13 @@
+foo
+
+* xref:lusid:get-started/index.adoc[Getting Started]
+    ** xref:lusid:get-started/create-account.adoc[]
+    ** xref:lusid:get-started/create-application.adoc[]
+    ** xref:lusid:get-started/configure-secrets-file.adoc[]
+    ** xref:lusid:get-started/quick-start.adoc[]
+
+* xref:lusid:languages/index.adoc[Language SDKs]
+    ** xref:lusid:languages/python.adoc[Python]
+    ** xref:lusid:languages/csharp.adoc[C#]
+    ** xref:lusid:languages/java.adoc[Java]
+    ** xref:lusid:languages/javascript.adoc[JavaScript]
