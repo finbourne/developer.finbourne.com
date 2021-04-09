@@ -1,8 +1,0 @@
-name: developer
-title: Developer Hub
-version: master
-nav:
-- modules/ROOT/nav.adoc
-asciidoc:
-  attributes:
-    page-toclevels: 2@

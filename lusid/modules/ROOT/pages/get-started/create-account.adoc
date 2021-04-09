@@ -1,5 +1,0 @@
-= Create  account
-:page-pagination: true
-:description: This guide walks through how to create a LUSID account.
-
-here we create an account and LUSID domain
