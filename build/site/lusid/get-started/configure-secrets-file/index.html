@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    <meta name="msvalidate.01" content="B5163518CBE4A854B63801277FE5E35C" />
+    <meta name="google-site-verification" content="ucqagxjVuq0lJZeLKs0F5AppzK111lNt3IoxU6mzlJE" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WK23PSS');</script>
+
+<title>Configure secrets file - FINBOURNE Developer Hub</title>    <link rel="canonical" href="https://developer.finbourne.com/lusid/get-started/configure-secrets-file/">
+    <link rel="prev" href="../create-application/">
+    <link rel="next" href="../quick-start/">
+      <meta name="description" content="This guide walks through how to configure the secrets file that contains credentials for the LUSID API.">
+    <link rel="preload" href="../../../_/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://www.finbourne.com/hubfs/favicon.ico">    <meta name="type" content="Developer Guide">
+
+    <meta property="og:site_name" content="FINBOURNE" />    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@finbourne" />
+    <meta name="twitter:site" content="@finbourne" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Configure secrets file - LUSID" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.finbourne.com/hubfs/Lusid_social_banner.png" />
+    <meta property="og:description" content="This guide walks through how to configure the secrets file that contains credentials for the LUSID API.">
+    <meta property="og:url" content="https://developer.finbourne.com/lusid/get-started/configure-secrets-file/">
+
+  </head>
+  <body class="article developer">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="/static/assets/img/finbourne-logo.png" class="hs-image-widget " height="33" alt="finbourne-logo" title="finbourne-logo"></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="/developer">Developer Hub</a>
+        <a class="navbar-item" href="/lusid/get-started">Getting Started</a>
+        <a class="navbar-item" href="https://community.finbourne.com">Community</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://www.lusid.com/app/signup">Try For Free</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="lusid" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">LUSID</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../create-account/">Create  account</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../create-application/">Create application</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">Configure secrets file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../quick-start/">Quick Start</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../languages/">Language SDKs</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../languages/python/">Python</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../languages/csharp/">C#</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../languages/java/">Java</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../languages/javascript/">JavaScript</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+  <div class="toolbar-wrapper">
+    <button class="nav-toggle" aria-label="Toggle Table of Contents"></button>
+    <a href="../../../developer/" class="home-link" aria-label="Go to home page"></a>
+    <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">LUSID</a></li>
+    <li><a href="../">
+        Getting Started
+    </a></li>
+    <li><a href="./">
+        Configure secrets file
+    </a></li>
+  </ul>
+</nav>
+            <div class="edit-this-page"><a href="file:///Users/markneedham/projects/build-developer.finbourne.com/lusid/modules/ROOT/pages/get-started/configure-secrets-file.adoc">Edit this Page</a></div>
+  </div>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Configure secrets file</h1>
+<div class="paragraph">
+<p>In this guide you&#8217;ll learn how to create a secrets file for use with the LUSID API and <a href="../../languages/" class="page">LUSID SDKs</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You&#8217;ll need to have created a LUSID application before following the instructions in this guide.
+If you haven&#8217;t yet created an application, see <a href="../create-application/" class="page">Create application</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>From the LUSID home page, navigate to the Applications page.
+To do this, click on the person icon on the left hand menu and then click on the <code>Applications</code> link:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/secrets-part-0.png" alt="secrets part 0">
+</div>
+<div class="title">Figure 1. Open the application</div>
+</div>
+<div class="paragraph">
+<p>Once you&#8217;re on this page, click on the eye icon.
+You&#8217;ll see the following screen:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/secrets-part-1.png" alt="secrets part 1">
+</div>
+<div class="title">Figure 2. Application credentials</div>
+</div>
+<div class="paragraph">
+<p>Now you&#8217;ll need to create a JSON file based on these values.</p>
+</div>
+<div class="listingblock">
+<div class="title">secrets.json</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "api" : {
+    "apiUrl": "&lt;1&gt;",
+    "tokenUrl": "&lt;2&gt;",
+    "clientId": "&lt;3&gt;",
+    "clientSecret": "&lt;4&gt;",
+    "applicationName": "&lt;applicationName&gt;",
+    "username": "&lt;username&gt;",
+    "password": "&lt;password&gt;"
+  }
+}</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 22.2222%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Token</th>
+<th class="tableblock halign-left valign-top">JSON key</th>
+<th class="tableblock halign-left valign-top">Section on LUSID web app</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;1&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>apiUrl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>API Url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LUSID API URL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;2&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tokenUrl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Token Url</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Okta endpoint to generate authentication token</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;3&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>clientId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Client Id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenID Connect Client ID</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;4&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>clientSecret</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Secret</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenID Connect Client Secret</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;applicationName&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>applicationName</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An optional identifier for your application</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;username&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>username</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Username of the account accessing the API (e.g. email used in <a href="../create-account/" class="page">Create  account</a>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;password&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>password</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Password of the account accessing the API (e.g. password used in <a href="../create-account/" class="page">Create  account</a>)</p></td>
+</tr>
+</tbody>
+</table>
+<nav class="pagination">
+  <span class="prev"><a href="../create-application/">Create application</a></span>
+
+  <span class="next"><a href="../quick-start/">Quick Start</a></span>
+</nav>
+</article>
+<aside class="toc sidebar" data-title="Contents"
+  data-levels="2">
+  <div class="toc-menu"></div>
+
+  </aside>  </div>
+</main>
+</div>
+<footer class="footer">
+<div class="wrapper">
+  <div class="column">
+    <a href="https://www.finbourne.com/" target="_parent" id="hs-link-module_15605042650921753_" style="border-width:0px;border:0px;"><img src="https://www.finbourne.com/hubfs/finbourne-logo-white.svg" class="hs-image-widget " style="width:186px;border-width:0px;border:0px;" width="186" alt="finbourne-logo-white" title="finbourne-logo-white"></a>
+    </div>
+    <div class="column">
+        © 2021 FINBOURNE Technology. All rights reserved
+    </div>
+ </div>
+</footer>
+
+  <script src="../../../_/js/site.js"></script>
+  <script async src="../../../_/js/vendor/highlight.js"></script>
+  <script async src="../../../_/js/vendor/image-zoom.js"></script>
+
+  </body>
+</html>

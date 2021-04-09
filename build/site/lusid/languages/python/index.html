@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1">
+    <meta name="msvalidate.01" content="B5163518CBE4A854B63801277FE5E35C" />
+    <meta name="google-site-verification" content="ucqagxjVuq0lJZeLKs0F5AppzK111lNt3IoxU6mzlJE" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WK23PSS');</script>
+
+<title>Python - FINBOURNE Developer Hub</title>    <link rel="canonical" href="https://developer.finbourne.com/lusid/languages/python/">
+      <meta name="description" content="This guide covers the Python SDK for LUSID by FINBOURNE and other Python tools.">
+    <link rel="preload" href="../../../_/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://www.finbourne.com/hubfs/favicon.ico">    <meta name="type" content="Developer Guide">
+
+    <meta property="og:site_name" content="FINBOURNE" />    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@finbourne" />
+    <meta name="twitter:site" content="@finbourne" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Python - LUSID" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.finbourne.com/hubfs/Lusid_social_banner.png" />
+    <meta property="og:description" content="This guide covers the Python SDK for LUSID by FINBOURNE and other Python tools.">
+    <meta property="og:url" content="https://developer.finbourne.com/lusid/languages/python/">
+
+  </head>
+  <body class="article developer">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../.."><img src="/static/assets/img/finbourne-logo.png" class="hs-image-widget " height="33" alt="finbourne-logo" title="finbourne-logo"></a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="/developer">Developer Hub</a>
+        <a class="navbar-item" href="/lusid/get-started">Getting Started</a>
+        <a class="navbar-item" href="https://community.finbourne.com">Community</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://www.lusid.com/app/signup">Try For Free</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="lusid" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">LUSID</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../get-started/">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../get-started/create-account/">Create  account</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../get-started/create-application/">Create application</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../get-started/configure-secrets-file/">Configure secrets file</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../get-started/quick-start/">Quick Start</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../">Language SDKs</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">Python</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../csharp/">C#</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../java/">Java</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../javascript/">JavaScript</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+  <div class="toolbar-wrapper">
+    <button class="nav-toggle" aria-label="Toggle Table of Contents"></button>
+    <a href="../../../developer/" class="home-link" aria-label="Go to home page"></a>
+    <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">LUSID</a></li>
+    <li><a href="../">
+        Language SDKs
+    </a></li>
+    <li><a href="./">
+        Python
+    </a></li>
+  </ul>
+</nav>
+            <div class="edit-this-page"><a href="file:///Users/markneedham/projects/build-developer.finbourne.com/lusid/modules/ROOT/pages/languages/python.adoc">Edit this Page</a></div>
+  </div>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Python</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide will help you get started with building applications with LUSID by FINBOURNE and the Python programming language.</p>
+</div>
+<div class="paragraph">
+<p>FINBOURNE develops and maintains two versions of the LUSID® Python SDK:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://github.com/finbourne/lusid-sdk-python" target="_blank" rel="noopener">lusid-sdk-python</a> </dt>
+<dd>
+<p>supports <code>Production</code> and <code>Early Access</code> API endpoints</p>
+</dd>
+<dt class="hdlist1"><a href="https://github.com/finbourne/lusid-sdk-python-preview" target="_blank" rel="noopener">lusid-sdk-python-preview</a> </dt>
+<dd>
+<p>supports <code>Production</code>, <code>Early Access</code>, <code>Beta</code> and <code>Experimental</code> API endpoints.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>For more details on API endpoint categories, see <a href="https://support.lusid.com/knowledgebase/article/KA-01786/en-us" target="_blank" rel="noopener">What is the LUSID feature release lifecycle?</a>
+To find out which category an API endpoint falls into, see <a href="https://www.lusid.com/api/swagger/index.html" target="_blank" rel="noopener">LUSID API Documentation</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You should only use <code>lusid-sdk-python-prevew</code> if you want to use the <code>Beta</code> or <code>Experimental</code> API endpoints.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The SDK is available on PyPi and can be installed by running the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install lusid-sdk</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The preview version of the SDK can be installed by running the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install lusid-sdk-preview</code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you install both <code>lusid-sdk-python</code> and <code>lusid-sdk-python-preview</code>, <code>import lusid</code> will refer to <code>lusid-sdk-python</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuring_api_client"><a class="anchor" href="#_configuring_api_client"></a>Configuring API Client</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now that you&#8217;ve installed the SDK, it&#8217;s time to use it.
+First, import the following modules:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import lusid
+import lusid.models as models
+from lusid.utilities import ApiConfigurationLoader</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can create the API factory by running the following code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">secrets_file_path = "/path/to/secrets.json"
+config = ApiConfigurationLoader.load(secrets_file_path)
+api_factory = lusid.utilities.ApiClientFactory(
+    token=lusid.utilities.RefreshingToken(config),
+    api_secrets_filename=secrets_file_path
+)</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You will need to create a secrets file containing your LUSID credentials.
+For instructions on how to construct this file, see <a href="../../get-started/configure-secrets-file/" class="page">Configure secrets file</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Now that the API client is ready, you are ready to use the various API endpoints.
+You can list all the API endpoints by running the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">[api for api in dir(lusid.api) if "API" in api]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An API endpoint can be constructed by calling <code>api_factory.build(lusid.api.&lt;className&gt;)</code> for any of the returned classes.
+For example, to construct the Transactions Portfolio API, run the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">tx_portfolios_api = api_factory.build(lusid.api.TransactionPortfoliosApi)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_documentation"><a class="anchor" href="#_api_documentation"></a>API Documentation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For reference documentation on each of the API endpoints, see <a href="https://lusid-sdk-python.readthedocs.io/en/latest/_autosummary/sdk.lusid.api.html#module-sdk.lusid.api" target="_blank" rel="noopener">Python SDK Reference Documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_tools"><a class="anchor" href="#_other_tools"></a>Other Tools</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following are other Python based tools:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://github.com/finbourne/sample-notebooks" target="_blank" rel="noopener">sample-notebooks</a></dt>
+<dd>
+<p>Jupyter Notebooks that use the Python SDK to walk through common use cases.</p>
+</dd>
+<dt class="hdlist1"><a href="https://github.com/finbourne/lusid-python-tools" target="_blank" rel="noopener">lusid-python-tools</a></dt>
+<dd>
+<p>Python tools for LUSID.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</article>
+<aside class="toc sidebar" data-title="Contents"
+  data-levels="2">
+  <div class="toc-menu"></div>
+
+  </aside>  </div>
+</main>
+</div>
+<footer class="footer">
+<div class="wrapper">
+  <div class="column">
+    <a href="https://www.finbourne.com/" target="_parent" id="hs-link-module_15605042650921753_" style="border-width:0px;border:0px;"><img src="https://www.finbourne.com/hubfs/finbourne-logo-white.svg" class="hs-image-widget " style="width:186px;border-width:0px;border:0px;" width="186" alt="finbourne-logo-white" title="finbourne-logo-white"></a>
+    </div>
+    <div class="column">
+        © 2021 FINBOURNE Technology. All rights reserved
+    </div>
+ </div>
+</footer>
+
+  <script src="../../../_/js/site.js"></script>
+  <script async src="../../../_/js/vendor/highlight.js"></script>
+  <script async src="../../../_/js/vendor/image-zoom.js"></script>
+
+  </body>
+</html>
