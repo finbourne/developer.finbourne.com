@@ -1,5 +1,6 @@
 * xref:lusid:get-started/index.adoc[Getting Started]
     ** xref:lusid:get-started/create-account.adoc[]
+    ** xref:lusid:get-started/login-account.adoc[]
     ** xref:lusid:get-started/create-application.adoc[]
     ** xref:lusid:get-started/configure-secrets-file.adoc[]
     ** xref:lusid:get-started/quick-start.adoc[]
@@ -9,3 +10,11 @@
     ** xref:lusid:languages/csharp.adoc[C#]
     ** xref:lusid:languages/java.adoc[Java]
     ** xref:lusid:languages/javascript.adoc[JavaScript]
+
+
+.How-To Guides
+
+* xref:lusid:administration/index.adoc[]
+    ** xref:lusid:administration/create-user.adoc[]
+    ** xref:lusid:administration/create-role.adoc[]
+    ** xref:lusid:administration/create-policy.adoc[]

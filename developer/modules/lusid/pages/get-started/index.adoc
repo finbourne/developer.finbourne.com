@@ -2,58 +2,19 @@
 
 // {docdatetime}
 
-In this guide you will go through the steps to get you up and running with LUSID by FINBOURNE, a bi-temporal investment management data platform with portfolio accounting capabilities.
+In this series of guides you will go through the steps to get you up and running with LUSID by FINBOURNE, a bi-temporal investment management data platform with portfolio accounting capabilities.
 
-* Sign up for account - fill in the form, confirmation email, login again
-* Create application - web UI, fill in the form, get/download credentials
-* Create secrets file or configure environment variables
-* Create API Client (with your preferred SDK) or HTTP/REST client 
+xref:lusid:get-started/create-account.adoc[] ::
+Create a LUSID domain and account.
 
-== Sign up for account
+xref:lusid:get-started/login-account.adoc[] ::
+Login to your LUSID account.
 
-The first thing you need to do is https://www.lusid.com/app/signup[sign up for a 30 day free-trial of LUSID ^]. 
-You'll have to fill in a few details and you'll then be sent an email to activate your account.
-This email will also include confirmation of your LUSID domain e.g. `<yourname>.lusid.com`. 
-You'll use that domain to access the LUSID web application.
+xref:lusid:get-started/create-application.adoc[] ::
+Create a LUSID application to use with the language SDKs.
 
-== Create application
+xref:lusid:get-started/configure-secrets-file.adoc[] ::
+Setup your credentials in a secrets file for use with the language SDKs.
 
-== Configure secrets
-
-[source, python]
-----
-import lusid
-import lusid.models as models
-from lusid.utilities import ApiConfigurationLoader
-----
-
-.Create API Client
-[source, python]
-----
-secrets_file_path = "/path/to/secrets.json"
-config = ApiConfigurationLoader.load(secrets_file_path)
-api_factory = lusid.utilities.ApiClientFactory(
-    token=lusid.utilities.RefreshingToken(config),
-    api_secrets_filename=secrets_file_path
-)
-----
-
-
-[source, python]
-----
-tx_portfolios_api = api_factory.build(lusid.api.TransactionPortfoliosApi)
-
-scope = "GettingStartedScope"
-guid = uuid.uuid4()
-
-portfolio_request = models.CreateTransactionPortfolioRequest(
-    display_name=f"Portfolio-{guid}",
-    code=f"Id-{guid}",
-    base_currency="GBP",
-    created=datetime.datetime(2021, 3, 20, tzinfo=pytz.utc)
-)
-
-portfolio = tx_portfolios_api.create_portfolio(scope, create_transaction_portfolio_request=portfolio_request)
-portfolio_code = portfolio.id.code
-print("Porfolio Code:", portfolio_code)
-----
+xref:lusid:get-started/quick-start.adoc[] ::
+Walk through a Hello World example of a simple workflow using LUSID.
