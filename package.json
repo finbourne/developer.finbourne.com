@@ -8,7 +8,8 @@
     "start": "node server.js",
     "build": "npm run build:preview",
     "build:preview": "npm run preview:developer",
-    "preview:developer": "antora --fetch --stacktrace antora-playbook.yml && mv build/site/ui build/site/developer/"
+    "preview:developer": "antora --fetch --stacktrace antora-playbook.yml && mv build/site/ui build/site/developer/",
+    "downloadScripts": "node scripts/download-scripts.js"
   },
   "author": "Mark Needham <mark.needham@finbourne.com>",
   "license": "ISC",

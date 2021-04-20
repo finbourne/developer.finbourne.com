@@ -38,26 +38,16 @@ dotnet add package Lusid.Sdk.Preview
 Now that you've installed the SDK, it's time to use it. 
 First, import the following modules:
 
-
-[source, bash]
-----
-dotnet new console -o FinbourneCSharpDemo
-cd FinbourneCSharpDemo
-----
-
 [source, csharp]
 ----
-using Lusid.Sdk.Api;
-using Lusid.Sdk.Model;
-using Lusid.Sdk.Utilities;
+include::example$HelloWorld.cs[tag="lusid-imports"]
 ----
 
 You can create the API factory by running the following code:
 
-[source, csharp]
+[source, csharp, indent=0]
 ----
-var secretsFile = "/path/to/secrets.json";
-var apiFactory = LusidApiFactoryBuilder.Build(secretsFile);
+include::example$HelloWorld.cs[tag="create-client-factory"]
 ----
 
 include::partial$credentials.adoc[]
@@ -66,7 +56,9 @@ Now that the API client is ready, you are ready to use the various API endpoints
 An API endpoint can be constructed by calling `apiFactory.Api(Lusid.Sdk.Api.<className>)` for any of the returned classes.
 For example, to construct the Transactions Portfolio API, run the following:
 
-[source, csharp]
+[source, csharp, indent=0]
 ----
-var txPortoliosApi = apiFactory.Api<ITransactionPortfoliosApi>();
+include::example$HelloWorld.cs[tag="create-tx-portfolios-api"]
 ----
+
+For a worked example showing how to use the C# SDK for a simple workflow, see xref:lusid:get-started/quick-start.adoc[].
