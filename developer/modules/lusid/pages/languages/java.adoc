@@ -40,7 +40,7 @@ First, import the following modules:
 
 [source, java]
 ----
-include::example$HelloWorld.java[tag="lusid-imports"]
+include::example$getting-started/HelloWorld.java[tag="lusid-imports"]
 ----
 
 You can create the API client by running the following code:
@@ -48,7 +48,7 @@ You can create the API client by running the following code:
 .Java
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="create-client-factory"]
+include::example$getting-started/HelloWorld.java[tag="create-client-factory"]
 ----
 
 include::partial$credentials.adoc[]
@@ -58,7 +58,7 @@ For example, to construct the Transactions Portfolio API, run the following:
 
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="create-tx-portfolios-api"]
+include::example$getting-started/HelloWorld.java[tag="create-tx-portfolios-api"]
 ----
 
 For a worked example showing how to use the Java SDK for a simple workflow, see xref:lusid:get-started/quick-start.adoc[].

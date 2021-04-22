@@ -1,6 +1,7 @@
 = Quick Start
+:description: This is a quick start developer guide in which you'll learn how to do some basic operations with the LUSID SDK.
 
-In this guide you'll  learn how to do some basic operations with the LUSID SDK.
+In this guide you'll learn how to do some basic operations with the LUSID SDK.
 You'll create a portfolio, upsert some instruments to that portfolio, upsert some transactions that use those instruments, and finally get the holdings of the portfolio.
 
 == Install SDK
@@ -42,19 +43,19 @@ Import the following modules:
 .Python
 [source, python]
 ----
-include::example$hello_world.py[tag="lusid-imports"]
+include::example$getting-started/hello_world.py[tag="lusid-imports"]
 ----
 
 .C#
 [source, csharp]
 ----
-include::example$HelloWorld.cs[tag="lusid-imports"]
+include::example$getting-started/HelloWorld.cs[tag="lusid-imports"]
 ----
 
 .Java
 [source, java]
 ----
-include::example$HelloWorld.java[tag="lusid-imports"]
+include::example$getting-started/HelloWorld.java[tag="lusid-imports"]
 ----
 
 
@@ -65,19 +66,19 @@ Now create the API factory/client:
 .Python
 [source, python]
 ----
-include::example$hello_world.py[tag="create-client-factory"]
+include::example$getting-started/hello_world.py[tag="create-client-factory"]
 ----
 
 .C#
 [source, csharp, indent=0]
 ----
-include::example$HelloWorld.cs[tag="create-client-factory"]
+include::example$getting-started/HelloWorld.cs[tag="create-client-factory"]
 ----
 
 .Java
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="create-client-factory"]
+include::example$getting-started/HelloWorld.java[tag="create-client-factory"]
 ----
 
 include::partial$credentials.adoc[]
@@ -96,9 +97,9 @@ You can create a portfolio by running the code below:
 --
 [source, python]
 ----
-include::example$hello_world.py[tag="create-tx-portfolios-api"]
+include::example$getting-started/hello_world.py[tag="create-tx-portfolios-api"]
 
-include::example$hello_world.py[tag="create-portfolio"]
+include::example$getting-started/hello_world.py[tag="create-portfolio"]
 ----
 
 include::partial$quick-start-output.adoc[tag="portfolio-code"]
@@ -108,9 +109,9 @@ include::partial$quick-start-output.adoc[tag="portfolio-code"]
 --
 [source, csharp, indent=0]
 ----
-include::example$HelloWorld.cs[tag="create-tx-portfolios-api"]
+include::example$getting-started/HelloWorld.cs[tag="create-tx-portfolios-api"]
 
-include::example$HelloWorld.cs[tag="create-portfolio"]
+include::example$getting-started/HelloWorld.cs[tag="create-portfolio"]
 ----
 
 include::partial$quick-start-output.adoc[tag="portfolio-code"]
@@ -120,9 +121,9 @@ include::partial$quick-start-output.adoc[tag="portfolio-code"]
 --
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="create-tx-portfolios-api"]
+include::example$getting-started/HelloWorld.java[tag="create-tx-portfolios-api"]
 
-include::example$HelloWorld.java[tag="create-portfolio"]
+include::example$getting-started/HelloWorld.java[tag="create-portfolio"]
 ----
 
 include::partial$quick-start-output.adoc[tag="portfolio-code"]
@@ -144,19 +145,19 @@ In this example we'll use the Financial Instrument Global Identifier (FIGI), but
 .Python
 [source, python]
 ----
-include::example$hello_world.py[tag="upsert-instruments"]
+include::example$getting-started/hello_world.py[tag="upsert-instruments"]
 ----
 
 .C#
 [source, csharp, indent=0]
 ----
-include::example$HelloWorld.cs[tag="upsert-instruments"]
+include::example$getting-started/HelloWorld.cs[tag="upsert-instruments"]
 ----
 
 .Java
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="upsert-instruments"]
+include::example$getting-started/HelloWorld.java[tag="upsert-instruments"]
 ----
 
 LUSID assigns each instrument that we create a unique indentifier (LUID).
@@ -175,19 +176,19 @@ We'll then create two maps/dictionaries:
 .Python
 [source, python]
 ----
-include::example$hello_world.py[tag="get-instruments"]
+include::example$getting-started/hello_world.py[tag="get-instruments"]
 ----
 
 .C#
 [source, csharp, indent=0]
 ----
-include::example$HelloWorld.cs[tag="get-instruments"]
+include::example$getting-started/HelloWorld.cs[tag="get-instruments"]
 ----
 
 .Java
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="get-instruments"]
+include::example$getting-started/HelloWorld.java[tag="get-instruments"]
 ----
 
 == Upsert Transactions
@@ -200,19 +201,19 @@ We're going to buy 100 units of Vodafone stock at a price of 103 each.
 .Python
 [source, python]
 ----
-include::example$hello_world.py[tag="upsert-transactions"]
+include::example$getting-started/hello_world.py[tag="upsert-transactions"]
 ----
 
 .C#
 [source, csharp, indent=0]
 ----
-include::example$HelloWorld.cs[tag="upsert-transactions"]
+include::example$getting-started/HelloWorld.cs[tag="upsert-transactions"]
 ----
 
 .Java
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="upsert-transactions"]
+include::example$getting-started/HelloWorld.java[tag="upsert-transactions"]
 ----
 
 == Get Holdings
@@ -225,7 +226,7 @@ And finally let's take a look at our holdings.
 --
 [source, python]
 ----
-include::example$hello_world.py[tag="get-holdings"]
+include::example$getting-started/hello_world.py[tag="get-holdings"]
 ----
 
 include::partial$quick-start-output.adoc[tag="holdings"]
@@ -235,7 +236,7 @@ include::partial$quick-start-output.adoc[tag="holdings"]
 --
 [source, csharp, indent=0]
 ----
-include::example$HelloWorld.cs[tag="get-holdings"]
+include::example$getting-started/HelloWorld.cs[tag="get-holdings"]
 ----
 
 include::partial$quick-start-output.adoc[tag="holdings"]
@@ -245,7 +246,7 @@ include::partial$quick-start-output.adoc[tag="holdings"]
 --
 [source, java, indent=0]
 ----
-include::example$HelloWorld.java[tag="get-holdings"]
+include::example$getting-started/HelloWorld.java[tag="get-holdings"]
 ----
 
 include::partial$quick-start-output.adoc[tag="holdings"]

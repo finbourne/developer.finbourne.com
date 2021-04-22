@@ -45,14 +45,14 @@ First, import the following modules:
 
 [source, python]
 ----
-include::example$hello_world.py[tag="lusid-imports"]
+include::example$getting-started/hello_world.py[tag="lusid-imports"]
 ----
 
 You can create the API factory by running the following code:
 
 [source, python]
 ----
-include::example$hello_world.py[tag="create-client-factory"]
+include::example$getting-started/hello_world.py[tag="create-client-factory"]
 ----
 
 include::partial$credentials.adoc[]
@@ -70,7 +70,7 @@ For example, to construct the Transactions Portfolio API, run the following:
 
 [source, python]
 ----
-include::example$hello_world.py[tag="create-tx-portfolios-api"]
+include::example$getting-started/hello_world.py[tag="create-tx-portfolios-api"]
 ----
 
 For a worked example showing how to use the Python SDK for a simple workflow, see xref:lusid:get-started/quick-start.adoc[].

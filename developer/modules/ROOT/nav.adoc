@@ -11,8 +11,13 @@
     ** xref:lusid:languages/java.adoc[Java]
     ** xref:lusid:languages/javascript.adoc[JavaScript]
 
+.Tutorials
+
+* xref:lusid:tutorials/create-holdings-report.adoc[]
 
 .How-To Guides
+
+* xref:lusid:how-to/maintain-instruments-master.adoc[Instruments master]
 
 * xref:lusid:administration/index.adoc[]
     ** xref:lusid:administration/create-user.adoc[]
