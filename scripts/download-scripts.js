@@ -51,6 +51,13 @@ const files = [
       "developer/modules/lusid/examples/transaction-portfolio/get_updated_portfolio.csv"],      
       [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/test_transaction_portfolios.py",
       "developer/modules/lusid/examples/transaction-portfolio/test_transaction_portfolios.py"],      
+      
+      [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/data/test_configure_transaction_types/test_output/transaction_types.csv",
+      "developer/modules/lusid/examples/transaction-types/transaction_types.csv"],
+      [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/test_configure_transaction_types.py",
+      "developer/modules/lusid/examples/transaction-types/test_configure_transaction_types.py"], 
+      [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/lusid_utils.py",
+      "developer/modules/lusid/examples/lusid_utils.py"] 
 
 ]
 files.forEach(value => {

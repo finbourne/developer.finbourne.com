@@ -1,5 +1,6 @@
 import unittest
 from pathlib import Path
+import tests.integration.examples.lusid_utils as lusid_utils
 
 # tag::imports[]
 import lusid
@@ -12,17 +13,12 @@ from datetime import datetime
 # end::imports[]
 
 
-class InstrumentsMaster(unittest.TestCase):
+class TransactionPortfolios(unittest.TestCase):
     def write_to_test_output(self, df, file_name):
         df.to_csv(Path(__file__).parent.joinpath(f"data/test_transaction_portfolios/test_output/{file_name}"), index=False)
 
-    def test_maintain_instruments_master(self) -> None:
-        # tag::api-factory[]
-        secrets_file = Path(__file__).parent.parent.parent.joinpath("secrets.json")
-        api_factory = lusid.utilities.ApiClientFactory(
-            api_secrets_filename=secrets_file
-        )
-        # end::api-factory[]
+    def test_transaction_portfolios(self) -> None:
+        api_factory = lusid_utils.api_factory
 
         # tag::create-apis[]
         transaction_portfolios_api = api_factory.build(lusid.api.TransactionPortfoliosApi)
@@ -85,8 +81,7 @@ class InstrumentsMaster(unittest.TestCase):
             "Name": portfolio.display_name,
             "Description": portfolio.description,
             "Base Currency": portfolio.base_currency,
-            "Manager Name": portfolio.properties[portfolio_manager_property].value.label_value,
-
+            "Manager Name": portfolio.properties[portfolio_manager_property].value.label_value
         }])
         # end::get-portfolio[]
         self.write_to_test_output(portfolio_df, "get_portfolio.csv")

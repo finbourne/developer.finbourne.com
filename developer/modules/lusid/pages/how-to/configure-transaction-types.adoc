@@ -1,0 +1,31 @@
+= How to configure transaction types
+
+In this guide you will learn how to configure transaction types in LUSID.
+
+[NOTE]
+====
+LUSID comes with some built-in transaction types, so before you create any types it's best to check if what you want to create already exists.
+For more on existing transaction types, see xref:lusid:how-to/get-default-transaction-types.adoc[].
+====
+
+== Setup
+
+We'll be using the https://github.com/finbourne/lusid-python-tools[LUSID Python Tools library^] in this guide, which you can install by running the following:
+
+[source, bash]
+----
+pip install lusidtools
+----
+
+Once you've got that installed, import the following modules:
+
+[source, python, indent=0]
+----
+include::example$transaction-types/test_configure_transaction_types.py[tag="imports"]
+----
+
+And then create an API factory:
+
+include::partial$api-factory.adoc[]
+
+== Adding transaction types

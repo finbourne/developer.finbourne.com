@@ -1,11 +1,11 @@
 = How to maintain an instruments master
-:description: In this guide we will learn how to maintain an instruments master. An instruments master typically contains details about our financial assets.
+:description: In this guide we will learn how to maintain an instruments master in LUSID by FINBOURNE. An instruments master typically contains details about our financial assets.
 
 In this guide we will learn how to maintain an instruments master.
 Instruments in LUSID are used to represent financial assets that you own or have exposure to.
 We'll start by importing some instruments, then we'll retrieve them, update them, and finally delete them.
 
-== Tool installation and setup
+== Setup
 
 We'll be using the https://github.com/finbourne/lusid-python-tools[LUSID Python Tools library^] in this guide, which you can install by running the following:
 
@@ -23,10 +23,7 @@ include::example$instrument-master/test_instruments_master.py[tag="imports"]
 
 And then create an API factory:
 
-[source, python, indent=0]
-----
-include::example$instrument-master/test_instruments_master.py[tag="api-factory"]
-----
+include::partial$api-factory.adoc[]
 
 We're now ready to start building an instruments master.
 

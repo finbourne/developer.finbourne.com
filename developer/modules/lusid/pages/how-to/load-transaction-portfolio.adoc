@@ -1,9 +1,10 @@
 = How to load a transaction portfolio
+:description: In this guide we'll learn how to create a transaction portfolio in LUSID by FINBOURNE.
 
 A transaction portfolio records a transaction history of economic events such as transactions and corporate actions. 
 Portolios exists within a logical data partition called a scope.
 
-== Tool installation and setup
+== Setup
 
 We'll be using the https://github.com/finbourne/lusid-python-tools[LUSID Python Tools library^] in this guide, which you can install by running the following:
 
@@ -21,12 +22,9 @@ include::example$transaction-portfolio/test_transaction_portfolios.py[tag="impor
 
 And then create an API factory:
 
-[source, python, indent=0]
-----
-include::example$transaction-portfolio/test_transaction_portfolios.py[tag="api-factory"]
-----
+include::partial$api-factory.adoc[]
 
-We're going to be using three different APIs in this guide: Transactions Portfolios, Portfolios, and Portfolios.
+We're going to be using three different APIs in this guide: Transactions Portfolios, Property Definitions, and Portfolios.
 You can create the classes to call these API end points by running the following code:
 
 [source, python, indent=0]

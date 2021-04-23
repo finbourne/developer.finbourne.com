@@ -1,7 +1,20 @@
 = How To Guides for LUSID by FINBOURNE
+:description: How-To Guides for the LUSID by FINBOURNE, a bi-temporal investment management data platform with portfolio accounting capabilities.
 
 The guides in this section go through the steps to solve problems with LUSID.
 
+xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio] ::
+Create a transaction portfolio.
 
-* xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio]
-* xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]
+xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master] ::
+Import all your assets/investments.
+
+== Transactions
+
+xref:lusid:how-to/get-default-transaction-types.adoc[Get Transaction Types] ::
+Get a list of the configured transaction types.
+
+xref:lusid:how-to/configure-transaction-types.adoc[Configure Transaction Types] ::
+Configure new transaction types.
+
+
