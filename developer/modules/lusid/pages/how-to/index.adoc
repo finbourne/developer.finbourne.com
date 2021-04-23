@@ -1,0 +1,7 @@
+= How To Guides for LUSID by FINBOURNE
+
+The guides in this section go through the steps to solve problems with LUSID.
+
+
+* xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio]
+* xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]

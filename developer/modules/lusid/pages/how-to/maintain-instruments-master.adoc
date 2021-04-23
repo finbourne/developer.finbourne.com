@@ -214,10 +214,11 @@ include::example$instrument-master/test_instruments_master.py[tag="get-instrumen
 include::example$instrument-master/get_instruments_later.csv[]
 |===
 
+As we can see, the `ClientInternal` has been updated.
 
 == Delete instruments
 
-We can also delete instruments.
+And finally, we can delete instruments.
 To delete all instruments based on their Figi, run the following:
 
 [source, python, indent=0]
@@ -228,5 +229,5 @@ include::example$instrument-master/test_instruments_master.py[tag="delete-instru
 [NOTE]
 ====
 When we delete an instrument it becomes unavailable from the time that we delete it onwards.
-But it's not permanently deleted from the system - if look back in time at our instruments or transactions based on those instruments, we will be able to find them.
+But it's not permanently deleted from the system - if we look back in time at our instruments or transactions based on those instruments, we will still be able to find them.
 ====

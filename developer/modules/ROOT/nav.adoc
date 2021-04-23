@@ -17,7 +17,9 @@
 
 .How-To Guides
 
-* xref:lusid:how-to/maintain-instruments-master.adoc[Instruments master]
+* xref:lusid:how-to/index.adoc[All How-To Guides]
+* xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio]
+* xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]
 
 * xref:lusid:administration/index.adoc[]
     ** xref:lusid:administration/create-user.adoc[]
