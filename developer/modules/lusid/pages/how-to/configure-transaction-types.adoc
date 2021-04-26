@@ -29,3 +29,5 @@ And then create an API factory:
 include::partial$api-factory.adoc[]
 
 == Adding transaction types
+
+Let's say that in our internal systems we used `Purchase` to mean that we're buying an instrument and 

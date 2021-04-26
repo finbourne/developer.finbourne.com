@@ -1,0 +1,7 @@
+= User Defined Properties
+
+Part of LUSID's flexible modelling system is letting you define your own properties. 
+
+Where can you use this properties?
+
+- Choosing a domain

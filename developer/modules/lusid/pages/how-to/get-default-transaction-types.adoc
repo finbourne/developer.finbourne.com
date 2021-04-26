@@ -25,7 +25,7 @@ include::partial$api-factory.adoc[]
 
 == List transaction types
 
-The list of configured transaction types are availabled via the System Configuration Api.
+The list of configured transaction types are availabled via the System Configuration API.
 You can return a list of them by running the following code:
 
 [source, python, indent=0]
@@ -42,5 +42,5 @@ include::example$transaction-types/transaction_types.csv[]
 |===
 
 As you can see, there are lots of different transaction types, covering a variety of use cases.
-But if you use a different transaction type that isn't on this list, you can add new transaction types.
+But if you use a transaction type that isn't on this list, you can add new transaction types.
 For more details, see xref:lusid:how-to/configure-transaction-types.adoc[].

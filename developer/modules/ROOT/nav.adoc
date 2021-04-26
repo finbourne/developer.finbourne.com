@@ -18,6 +18,7 @@
 .xref:lusid:how-to/index.adoc[How-To Guides]
 * xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio]
 * xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]
+* xref:lusid:how-to/load-transactions.adoc[Load Transactions]
 * xref:lusid:how-to/get-default-transaction-types.adoc[Get Transaction Types]
 * xref:lusid:how-to/configure-transaction-types.adoc[Add Transaction Types]
 

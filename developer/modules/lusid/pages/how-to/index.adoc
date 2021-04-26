@@ -11,6 +11,9 @@ Import all your assets/investments.
 
 == Transactions
 
+xref:lusid:how-to/load-transactions.adoc[Load Transactions] ::
+Import transactions
+
 xref:lusid:how-to/get-default-transaction-types.adoc[Get Transaction Types] ::
 Get a list of the configured transaction types.
 

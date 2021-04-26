@@ -1,1 +1,16 @@
 = How to load transactions
+
+
+
+Like the other data entities in LUSID, the transaction has an extensible data model. You only need to provide the following to upsert a transaction:
+
+Scope
+Code
+Transaction ID
+Transaction Type (e.g. Buy, Sell, Close, FundsIn)
+Instrument ID (e.g. LUID, ISIN)
+Transaction Date
+Settlement Date
+Units
+Transaction Price
+Total Consideration
