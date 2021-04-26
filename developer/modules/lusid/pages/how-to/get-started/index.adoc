@@ -4,17 +4,17 @@
 
 In this series of guides you will go through the steps to get you up and running with LUSID by FINBOURNE, a bi-temporal investment management data platform with portfolio accounting capabilities.
 
-xref:lusid:get-started/create-account.adoc[] ::
+xref:lusid:how-to/get-started/create-account.adoc[] ::
 Create a LUSID domain and account.
 
-xref:lusid:get-started/login-account.adoc[] ::
+xref:lusid:how-to/get-started/login-account.adoc[] ::
 Login to your LUSID account.
 
-xref:lusid:get-started/create-application.adoc[] ::
+xref:lusid:how-to/get-started/create-application.adoc[] ::
 Create a LUSID application to use with the language SDKs.
 
-xref:lusid:get-started/configure-secrets-file.adoc[] ::
+xref:lusid:how-to/get-started/configure-secrets-file.adoc[] ::
 Setup your credentials in a secrets file for use with the language SDKs.
 
-xref:lusid:get-started/quick-start.adoc[] ::
+xref:lusid:how-to/get-started/quick-start.adoc[] ::
 Walk through a Hello World example of a simple workflow using LUSID.

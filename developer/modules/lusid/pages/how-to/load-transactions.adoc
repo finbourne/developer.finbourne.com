@@ -1,5 +1,7 @@
 = How to load transactions
+:description: In this guide we'll learn how to import transactions into LUSID.
 
+{description}
 
 
 Like the other data entities in LUSID, the transaction has an extensible data model. You only need to provide the following to upsert a transaction:
@@ -14,3 +16,6 @@ Settlement Date
 Units
 Transaction Price
 Total Consideration
+
+
+Must have created a transaction portfolio and an instrument master.

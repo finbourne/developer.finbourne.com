@@ -45,11 +45,17 @@ include::example$transaction-portfolio/test_transaction_portfolios.py[tag="creat
 
 We get back a portfolio code, which we'll store in the `portfolio_code` variable to use later in this guide.
 
+[[user-defined-properties]]
 == User defined properties
 
 LUSID supports user defined properties.
 User defined properties can be associated with portfolios to add in additional model data 
 For example, a property for ‘portfolio manager’ could be added and linked to a portfolio for management and reporting purposes.
+
+[NOTE]
+====
+For more details on user defined properties, see xref:lusid:how-to/user-defined-properties.adoc[]
+====
 
 If you want to add a user defined property to a portfolio, you'll need to first create that property:
 
@@ -89,6 +95,7 @@ You need to specify the ones that you want to return using the `property_keys` p
 include::example$transaction-portfolio/get_portfolio.csv[]
 |===
 
+[[create-portfolio-with-user-defined-properties]]
 == Create portfolio with user defined properties
 
 In the previous part of this guide, we created a portfolio and then later added a user defined property.

@@ -57,7 +57,14 @@ const files = [
       [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/test_configure_transaction_types.py",
       "developer/modules/lusid/examples/transaction-types/test_configure_transaction_types.py"], 
       [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/lusid_utils.py",
-      "developer/modules/lusid/examples/lusid_utils.py"] 
+      "developer/modules/lusid/examples/lusid_utils.py"],
+
+      [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/data/test_user_defined_properties/test_output/get_property.csv",
+      "developer/modules/lusid/examples/user-defined-properties/get_property.csv"],
+      [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/data/test_user_defined_properties/test_output/portfolio_manager_property.txt",
+      "developer/modules/lusid/examples/user-defined-properties/portfolio_manager_property.txt"],
+      [ "https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/test_user_defined_properties.py",
+      "developer/modules/lusid/examples/user-defined-properties/test_user_defined_properties.py"],
 
 ]
 files.forEach(value => {

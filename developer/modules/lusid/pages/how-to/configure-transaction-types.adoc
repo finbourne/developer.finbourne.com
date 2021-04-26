@@ -1,4 +1,5 @@
 = How to configure transaction types
+:description: In this guide we'll learn how to configure LUSID's transaction types.
 
 In this guide you will learn how to configure transaction types in LUSID.
 
