@@ -22,7 +22,7 @@
 ** xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]
 ** xref:lusid:how-to/load-transactions.adoc[Load Transactions]
 ** xref:lusid:how-to/get-default-transaction-types.adoc[Get Transaction Types]
-** xref:lusid:how-to/configure-transaction-types.adoc[Add Transaction Types]
+** xref:lusid:how-to/configure-transaction-types.adoc[Set Transaction Types]
 ** xref:lusid:how-to/user-defined-properties.adoc[User Defined Properties]
 
 
@@ -30,3 +30,8 @@
     ** xref:lusid:administration/create-user.adoc[]
     ** xref:lusid:administration/create-role.adoc[]
     ** xref:lusid:administration/create-policy.adoc[]
+
+
+.Explanation
+    
+* xref:lusid:explanation/transaction-types.adoc[]    

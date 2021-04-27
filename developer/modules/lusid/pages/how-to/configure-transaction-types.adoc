@@ -1,13 +1,8 @@
 = How to configure transaction types
 :description: In this guide we'll learn how to configure LUSID's transaction types.
 
-In this guide you will learn how to configure transaction types in LUSID.
-
-[NOTE]
-====
-LUSID comes with some built-in transaction types, so before you create any types it's best to check if what you want to create already exists.
-For more on existing transaction types, see xref:lusid:how-to/get-default-transaction-types.adoc[].
-====
+{description}
+Transaction types let you specify the underlying movements that should occur when a transaction with this type is upserted into LUSID.
 
 == Setup
 
@@ -18,17 +13,96 @@ We'll be using the https://github.com/finbourne/lusid-python-tools[LUSID Python 
 pip install lusidtools
 ----
 
-Once you've got that installed, import the following modules:
+== Get existing transaction types
 
-[source, python, indent=0]
+LUSID comes pre-configured with transaction types. 
+These can be retrieved using the SDK, as described in xref:lusid:how-to/get-default-transaction-types.adoc[].
+
+But if we want to configure new transaction types, we need to replace all transaction types, which is easier to do with the LUSID Tools CLI.
+You can download all transaction types into a file by going to the terminal and running the following command:
+
+[source, bash]
 ----
-include::example$transaction-types/test_configure_transaction_types.py[tag="imports"]
+lusidtools txn_cfg get \
+  --secrets-file /path/to/secrets.json \
+  --file transaction-config.yaml
 ----
 
-And then create an API factory:
+The first few lines of the file are shown below:
 
-include::partial$api-factory.adoc[]
+.transaction-config.yaml
+[source, yaml]
+----
+!Txn
+sideConfigRequests:
+- !SideConfig [Side1, 'Txn:LusidInstrumentId', 'Txn:TradeCurrency', 'Txn:TradeToPortfolioRate', 'Txn:Units', 'Txn:TradeAmount']
+- !SideConfig [Side2, 'Txn:SettleCcy', 'Txn:SettlementCurrency', SettledToPortfolioRate, 'Txn:TotalConsideration', 'Txn:TotalConsideration']
+- !SideConfig [Side2WithoutBondInterest, 'Txn:SettleCcy', 'Txn:SettlementCurrency', SettledToPortfolioRate, BaseOnSeparateBondInterest, BaseOnSeparateBondInterest]
+- !SideConfig [BondInt, 'Txn:SettleCcy', 'Txn:SettlementCurrency', SettledToPortfolioRate, 'Txn:BondInterest', 'Txn:BondInterest']
+transactionConfigRequests:
+- !TxnConfig
+  aliases:
+  - !Alias [Buy, Purchase, default, Basic, LL]
+  - !Alias [BY, PURCHASE, alt1, Basic, LL]
+  movements:
+  - !Mvmt [[S1, 1, StockMovement], [], []]
+  - !Mvmt [[S2, -1, CashCommitment], [], []]
+  properties: []
+- !TxnConfig
+  aliases:
+  - !Alias [Sell, Sale, default, Basic, LS]
+  - !Alias [SL, SALE, alt1, Basic, LS]
+  movements:
+  - !Mvmt [[S1, -1, StockMovement], [], []]
+  - !Mvmt [[S2, 1, CashCommitment], [], []]
+  properties: []
+...
+----
 
-== Adding transaction types
+== Set transaction types
 
-Let's say that in our internal systems we used `Purchase` to mean that we're buying an instrument and 
+Let's say that we want to add two new aliases: 
+
+* `B` that does the same thing as `Buy` and `BY` - increments StockMovement and decrements CashCommitment
+* `S` that does the same thing as `Sell` and `SL` - decrements StockMovement and increments CashCommitment
+
+You can update the appropriate lines of `transaction-config.yaml` as follows:
+
+:source-linenums-option:
+
+.transaction-config.yaml
+[source, yaml]
+----
+...
+transactionConfigRequests:
+- !TxnConfig
+  aliases:
+  - !Alias [Buy, Purchase, default, Basic, LL]
+  - !Alias [BY, PURCHASE, alt1, Basic, LL]
+  - !Alias [B, PURCHASE, alt2, Basic, LL] // <1>
+  movements:
+  - !Mvmt [[S1, 1, StockMovement], [], []]
+  - !Mvmt [[S2, -1, CashCommitment], [], []]
+  properties: []
+- !TxnConfig
+  aliases:
+  - !Alias [Sell, Sale, default, Basic, LS]
+  - !Alias [SL, SALE, alt1, Basic, LS]
+  - !Alias [S, SALE, alt1, Basic, LS] // <2>
+  movements:
+  - !Mvmt [[S1, -1, StockMovement], [], []]
+  - !Mvmt [[S2, 1, CashCommitment], [], []]
+  properties: []
+...
+----
+<1> New alias for buying a stock
+<2> New alias for selling a stock
+
+After you've edited the file, you can set transaction types by running the following command:
+
+[source, bash]
+----
+lusidtools txn_cfg set \
+  --secrets-file /path/to/secrets.json \
+  --file transaction-config.yaml
+----
