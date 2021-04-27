@@ -7,8 +7,8 @@ In this guide you'll learn how to create a LUSID application to use with the LUS
 [NOTE]
 ====
 You'll need to have created and logged into a LUSID account before following the instructions in this guide.
-If you haven't yet created an account, see xref:get-started/create-account.adoc[].
-If you haven't yet logged in, see xref:get-started/login-account.adoc[].
+If you haven't yet created an account, see xref:how-to/get-started/create-account.adoc[].
+If you haven't yet logged in, see xref:how-to/get-started/login-account.adoc[].
 ====
 
 

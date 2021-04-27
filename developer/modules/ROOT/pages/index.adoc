@@ -120,7 +120,7 @@ section.tiles:last-of-type {
       <p>
       LUSID by FINBOURNE is a bi-temporal investment management data platform with portfolio accounting capabilities. On the FINBOURNE Developer Hub you'll find guides, tutorials, and code samples to help you build next-generation finance apps.
       </p>
-      <a class="button main-c2a" href="/lusid/get-started">Get Started</a>
+      <a class="button main-c2a" href="/lusid/how-to/get-started">Get Started</a>
     </section>
 
     <section class="tiles sdks" id="language-sdks">

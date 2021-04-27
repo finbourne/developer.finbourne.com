@@ -5,19 +5,28 @@ The guides in this section go through the steps to solve problems with LUSID.
 
 == Getting Started
 
+Start here if you haven't used LUSID before.
+
 * xref:lusid:how-to/get-started/create-account.adoc[] - Create your account
 * xref:lusid:how-to/get-started/login-account.adoc[] - Login
 * xref:lusid:how-to/get-started/create-application.adoc[] - Create a LUSID Application
 * xref:lusid:how-to/get-started/configure-secrets-file.adoc[] - Setup a secrets file
-* xref:lusid:how-to/get-started/quick-start.adoc[] - Basic workflow
 
 == IBOR
+
+These guides walk through common tasks when building an Investment Book of Record (IBOR) using LUSID.
 
 * xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio] - Create a transaction portfolio.
 
 * xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master] - Import all your assets/investments.
 
 * xref:lusid:how-to/load-transactions.adoc[Load Transactions] - Import transactions
+
+* xref:lusid:how-to/view-holdings.adoc[View Holdings] - Compute the holdings for a portfolio
+
+== Transactions
+
+These guides go through tasks related to transactions in LUSID.
 
 * xref:lusid:how-to/get-default-transaction-types.adoc[Get Transaction Types] - Get a list of the configured transaction types.
 

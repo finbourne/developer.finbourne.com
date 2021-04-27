@@ -1,4 +1,4 @@
-= Quick Start
+= Setting up a basic portfolio
 :description: This is a quick start developer guide in which you'll learn how to do some basic operations with the LUSID SDK.
 
 In this guide you'll learn how to do some basic operations with the LUSID SDK.

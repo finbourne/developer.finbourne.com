@@ -7,7 +7,7 @@ In this guide you will learn how to login to your LUSID account.
 [NOTE]
 ====
 You'll need to have created a LUSID account before following the instructions in this guide.
-If you haven't yet created an account, see xref:get-started/create-account.adoc[].
+If you haven't yet created an account, see xref:how-to/get-started/create-account.adoc[].
 ====
 
 First, you'll need to navigate to your LUSID domain that you created in ref:get-started/create-account.adoc[].  

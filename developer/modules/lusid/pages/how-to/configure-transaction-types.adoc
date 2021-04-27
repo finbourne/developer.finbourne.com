@@ -28,6 +28,8 @@ lusidtools txn_cfg get \
   --file transaction-config.yaml
 ----
 
+include::partial$credentials.adoc[]
+
 The first few lines of the file are shown below:
 
 .transaction-config.yaml
@@ -98,7 +100,7 @@ transactionConfigRequests:
 <1> New alias for buying a stock
 <2> New alias for selling a stock
 
-After you've edited the file, you can set transaction types by running the following command:
+After you've edited the file, you can upload the new transaction types to LUSID, by running the following command:
 
 [source, bash]
 ----

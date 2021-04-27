@@ -11,11 +11,11 @@ import pandas as pd
 # end::imports[]
 
 
-class TransactionPortfolios(unittest.TestCase):
+class UserDefinedProperties(unittest.TestCase):
     def write_to_test_output(self, df, file_name):
         df.to_csv(Path(__file__).parent.joinpath(f"data/test_user_defined_properties/test_output/{file_name}"), index=False)
 
-    def test_transaction_portfolios(self) -> None:
+    def test_user_defined_properties(self) -> None:
         api_factory = lusid_utils.api_factory
 
         # tag::create-apis[]
@@ -38,6 +38,8 @@ class TransactionPortfolios(unittest.TestCase):
         print(portfolio_manager_property)
         # end::create-property[]
         self.assertIsNotNone(portfolio_manager_property)
+        with open(Path(__file__).parent.joinpath("data/test_user_defined_properties/test_output/portfolio_manager_property.txt"), "w") as file:
+            file.write(portfolio_manager_property)
 
         # tag::get-property[]
         response = property_definitions_api.get_property_definition(

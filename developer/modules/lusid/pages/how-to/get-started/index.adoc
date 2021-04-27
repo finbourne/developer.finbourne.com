@@ -15,6 +15,3 @@ Create a LUSID application to use with the language SDKs.
 
 xref:lusid:how-to/get-started/configure-secrets-file.adoc[] ::
 Setup your credentials in a secrets file for use with the language SDKs.
-
-xref:lusid:how-to/get-started/quick-start.adoc[] ::
-Walk through a Hello World example of a simple workflow using LUSID.
