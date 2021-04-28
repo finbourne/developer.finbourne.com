@@ -22,6 +22,7 @@
 ** xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio]
 ** xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]
 ** xref:lusid:how-to/load-transactions.adoc[Load Transactions]
+** xref:lusid:how-to/set-holdings.adoc[Set Holdings]
 ** xref:lusid:how-to/view-holdings.adoc[View Holdings]
 ** xref:lusid:how-to/load-quotes.adoc[Load Quotes]
 
@@ -34,9 +35,9 @@
 
 
 * xref:lusid:how-to/access-control/index.adoc[]
-    ** xref:lusid:how-to/access-control/create-user.adoc[]
-    ** xref:lusid:how-to/access-control/create-role.adoc[]
-    ** xref:lusid:how-to/access-control/create-policy.adoc[]
+** xref:lusid:how-to/access-control/create-user.adoc[]
+** xref:lusid:how-to/access-control/create-role.adoc[]
+** xref:lusid:how-to/access-control/create-policy.adoc[]
 
 
 .Explanation

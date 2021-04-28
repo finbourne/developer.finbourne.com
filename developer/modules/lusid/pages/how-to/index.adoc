@@ -22,7 +22,11 @@ These guides walk through common tasks when building an Investment Book of Recor
 
 * xref:lusid:how-to/load-transactions.adoc[Load Transactions] - Import transactions
 
+* xref:lusid:how-to/set-holdings.adoc[Set Holdings] - Set the holdings of a portfolio
+
 * xref:lusid:how-to/view-holdings.adoc[View Holdings] - Compute the holdings for a portfolio
+
+* xref:lusid:how-to/load-quotes.adoc[Load Quotes] - Import market data.
 
 == Transactions
 

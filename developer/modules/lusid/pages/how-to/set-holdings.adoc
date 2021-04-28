@@ -6,7 +6,7 @@
 We might want to do this if we have a set of positions but don't have transaction data to create those positions.
 
 The code and data used in this guide can be downloaded from the {examples-repository}[examples^] section of the LUSID Python Tools repository.
-The code is in the {examples-repository-base}/test_quotes.py[test_quotes.py^] file, and the data under {examples-repository-base}/data/test_quotes[data/test_quotes^].
+The code is in the {examples-repository-base}/test_set_holdings.py[test_set_holdings.py^] file, and the data under {examples-repository-base}/data/test_set_holdings[data/test_set_holdings^].
 
 == Setup
 
