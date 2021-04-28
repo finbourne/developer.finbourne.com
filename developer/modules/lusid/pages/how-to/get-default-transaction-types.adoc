@@ -4,6 +4,9 @@
 LUSID comes pre-loaded with some commonly used transaction types.
 In this guide you will learn how to return those types.
 
+The code and data used in this guide can be downloaded from the {examples-repository}[examples^] section of the LUSID Python Tools repository.
+The code is in the {examples-repository-base}/test_configure_transaction_types.py[test_configure_transaction_types.py^] file, and the data under {examples-repository-base}/data/test_configure_transaction_types[data/test_configure_transaction_types^].
+
 == Setup
 
 We'll be using the https://github.com/finbourne/lusid-python-tools[LUSID Python Tools library^] in this guide, which you can install by running the following:

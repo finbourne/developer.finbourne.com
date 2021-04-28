@@ -23,6 +23,7 @@
 ** xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]
 ** xref:lusid:how-to/load-transactions.adoc[Load Transactions]
 ** xref:lusid:how-to/view-holdings.adoc[View Holdings]
+** xref:lusid:how-to/load-quotes.adoc[Load Quotes]
 
 * Transactions
 ** xref:lusid:how-to/get-default-transaction-types.adoc[Get Transaction Types]
@@ -40,4 +41,5 @@
 
 .Explanation
     
-* xref:lusid:explanation/transaction-types.adoc[]    
+* xref:lusid:explanation/transaction-types.adoc[]
+* xref:lusid:explanation/holding-types.adoc[]

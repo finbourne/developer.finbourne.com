@@ -5,6 +5,9 @@
 A holding is the amount of an instrument held in a portfolio at a point in time. 
 The LUSID Movements Engine calculates holdings from the history of transactions and holding adjustments in a portfolio.
 
+The code and data used in this guide can be downloaded from the {examples-repository}[examples^] section of the LUSID Python Tools repository.
+The code is in the {examples-repository-base}/test_holdings.py[test_holdings.py^] file, and the data under {examples-repository-base}/data/test_holdings[data/test_holdings^].
+
 == Setup
 
 We'll be using the https://github.com/finbourne/lusid-python-tools[LUSID Python Tools library^] in this guide, which you can install by running the following:
@@ -100,6 +103,12 @@ include::example$holdings/holdings_funds_loaded.csv[]
 |===
 
 As expected, the only entry is for 1,000,000 GBP.
+
+[NOTE]
+====
+The `Type` returned for this instrument is `B`, which means `Cash Balance`.
+For more details on holding types, see xref:lusid:explanation/holding-types.adoc[].
+====
 
 === After first day's trading 
 

@@ -5,13 +5,13 @@
 A transaction is an economic change to a portfolio. 
 Transactions can be one sided e.g. cash inflow or two sided e.g. an equity trade purchasing stock and settling cash.
 
+The code and data used in this guide can be downloaded from the {examples-repository}[examples^] section of the LUSID Python Tools repository.
+The code is in the {examples-repository-base}/test_transactions.py[test_transactions.py^] file, and the data under {examples-repository-base}/data/test_holdings[data/test_transactions^].
+
 [NOTE]
 ====
 To import transactions, you will need to have xref:lusid:how-to/load-transaction-portfolio.adoc[created a transaction portfolio] and xref:lusid:how-to/maintain-instruments-master.adoc[loaded the instruments] that the transactions are based on.
 ====
-
-The code and data used in this guide can be downloaded from the {examples-repository}[examples^] section of the LUSID Python Tools repository.
-The code is in the {examples-repository-base}/test_transactions.py[test_transactions.py^] file, and the data under {examples-repository-base}/data/test_holdings[data/test_transactions^].
 
 == Setup
 
