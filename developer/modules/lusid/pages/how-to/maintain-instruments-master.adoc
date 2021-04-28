@@ -46,6 +46,7 @@ include::example$instrument-master/instruments.csv[]
 
 We've got a mix of equities and government bonds. 
 
+[[instrument-identifier]]
 == Instrument identifiers
 
 Instruments in LUSID must have at least one unique identifier. 

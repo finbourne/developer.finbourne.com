@@ -76,7 +76,7 @@ include::example$holdings/test_holdings.py[tag="import-transactions"]
 == Compute holdings
 
 Now we can compute holdings based on these transactions.
-We'll use the following function to format the response from the Get Holdings API:
+We'll use the following function to format the response that we get back from the Get Holdings API:
 
 [source, python, indent=0]
 ----
@@ -99,7 +99,7 @@ include::example$holdings/test_holdings.py[tag="get-holdings-funds-loaded"]
 include::example$holdings/holdings_funds_loaded.csv[]
 |===
 
-As expected, the only entry is for £1,000,000 GBP.
+As expected, the only entry is for 1,000,000 GBP.
 
 === After first day's trading 
 
@@ -117,7 +117,7 @@ include::example$holdings/test_holdings.py[tag="get-holdings-first-day-trading"]
 include::example$holdings/holdings_first_day_trading.csv[]
 |===
 
-The amount of GBP has reduced by £256,000 to £744,000, which is exactly the amount of cash that we spent on the Tesco shares. 
+The amount of GBP has reduced by 256,000 to 744,000, which is exactly the amount of cash that we spent on the Tesco shares. 
 
 === After second day's trading 
 
@@ -158,3 +158,19 @@ include::example$holdings/holdings.csv[]
 |===
 
 Our cash is now down to £9,600, but our Tesco stock has increased to 120,000 units at a total cost of £308,000.
+
+=== Filtering by type
+
+We can also filter the holdings by type. 
+For example, if you only wanted to see holdings of type `Position`, you could run the following code:
+
+[source, python, indent=0]
+----
+include::example$holdings/test_holdings.py[tag="get-holdings-positions"]
+----
+
+.Holdings of postions
+[format="csv", options="header"]
+|===
+include::example$holdings/holdings_positions.csv[]
+|===

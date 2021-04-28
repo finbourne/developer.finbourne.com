@@ -82,7 +82,9 @@ const files = [
     ["https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/data/test_holdings/test_output/holdings_funds_loaded.csv",
     "developer/modules/lusid/examples/holdings/holdings_funds_loaded.csv"],
     ["https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/data/test_holdings/test_output/holdings_second_day_trading.csv",
-    "developer/modules/lusid/examples/holdings/holdings_second_day_trading.csv"],            
+    "developer/modules/lusid/examples/holdings/holdings_second_day_trading.csv"],    
+    ["https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/data/test_holdings/test_output/holdings_positions.csv",
+    "developer/modules/lusid/examples/holdings/holdings_positions.csv"],            
   ["https://raw.githubusercontent.com/mneedham/lusid-python-tools/instrument-master/tests/integration/examples/test_holdings.py",
     "developer/modules/lusid/examples/holdings/test_holdings.py"],
 
