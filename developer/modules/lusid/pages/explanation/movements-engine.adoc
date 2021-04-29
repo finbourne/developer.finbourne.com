@@ -1,8 +1,0 @@
-= Movements Engine
-
-
-Transactions --> Movements Engine --> Holdings
-
-Inside the Movements Engine:
-
-Transactions --> Economic Movements
