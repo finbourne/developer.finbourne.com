@@ -18,7 +18,7 @@
 ** xref:lusid:how-to/get-started/configure-secrets-file.adoc[]
 
 
-* IBOR
+* xref:lusid:how-to/ibor/index.adoc[IBOR]
 ** xref:lusid:how-to/load-transaction-portfolio.adoc[Loading Transaction Portfolio]
 ** xref:lusid:how-to/maintain-instruments-master.adoc[Maintaining Instruments Master]
 ** xref:lusid:how-to/load-transactions.adoc[Load Transactions]
