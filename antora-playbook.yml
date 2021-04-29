@@ -5,13 +5,17 @@ content:
   sources: 
     - url: .
       branches: HEAD
-      start_path: developer     
+      start_path: developer
+    - url: /Users/markneedham/projects/lusid-docs
+      branches: HEAD
+    - url: /Users/markneedham/projects/luminesce-docs
+      branches: HEAD
 ui: 
   bundle:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
     # url: antora-ui-bundle.zip
-    # url: /Users/markneedham/projects/docs-ui/build/ui-bundle.zip
-    url: ui-bundle.zip
+#    url: /Users/markneedham/projects/docs-ui/build/ui-bundle.zip
+     url: ui-bundle.zip
     snapshot: true
   output_dir: ui    
   supplemental_files:
