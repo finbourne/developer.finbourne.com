@@ -6,11 +6,13 @@ content:
     - url: .
       branches: HEAD
       start_path: developer
-    - url: /Users/markneedham/projects/lusid-docs
-      branches: HEAD
-#    - url: git@github.com:finbourne/lusid-docs.git
+#    - url: /Users/markneedham/projects/lusid-docs
 #      branches: HEAD
-    - url: /Users/markneedham/projects/luminesce-docs
+    - url: git@github.com:finbourne/lusid-docs.git
+      branches: HEAD
+#    - url: /Users/markneedham/projects/luminesce-docs
+#      branches: HEAD
+    - url: git@github.com:finbourne/luminesce-docs.git
       branches: HEAD
 ui: 
   bundle:
