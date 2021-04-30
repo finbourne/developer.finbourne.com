@@ -1,16 +1,58 @@
 = Source for (the future) developer.finbourne.com 
 
+This repository contains Antora playbooks for building what will be developer.finbourne.com.
 
-== Re-build everything
+== Install dependencies
+
+First, install the project dependencies:
 
 [source, bash]
 ----
-rm -rf build && cd antora-ui-bundle && zip -r ../antora-ui-bundle.zip * && cd .. && npm run build && npm run start
+npm install
 ----
 
-== Re-build content
+The npm install command will install Antora CLI, which is used to build the content defined in the Antora Playbooks (`*.yml` files in the project root).
+
+== Editing content
+
+This is only the repository for the Antora scaffolding, the actual documentation will leave elsewhere.
+For example, the LUSID documentation is available at https://github.com/finbourne/lusid-docs[github.com/finbourne/lusid-docs].
+
+This repository is referenced under `content.sources` of link:antora-playbook.yml[`antora-playbook.yml`].
+If you're editing content locally, you can change this section of the file.
+It might then look like this:
+
+[source, yml]
+----
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: developer
+    - url: /path/to/local/lusid-docs
+      branches: HEAD
+#    - url: git@github.com:finbourne/lusid-docs.git
+#      branches: HEAD
+----
+
+`/path/to/local/lusid-docs` must be a Git repository as well, otherwise Antora will complain when you try to build the project.
+
+== Build content and launch local web server
+
+You can re-build the content by running the following:
 
 [source,bash]
 ----
 npm run build && npm run start
+----
+
+You can then navigate to http://localhost:8000, where you will see a local version of the generated website.
+
+== Re-build everything
+
+If you want to re-build the content and scaffolding (e.g. if you update `ui-bundle.zip`), run the following:
+
+[source, bash]
+----
+rm -rf build && npm run build && npm run start
 ----
